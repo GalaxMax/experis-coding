@@ -1,6 +1,4 @@
 def total_points(numbers):
-    if not numbers:
-        return None
     team_total = 0
     opponent_total = 0
     for num in numbers:
@@ -13,6 +11,7 @@ def total_points(numbers):
             opponent_total += 1
         else:
             opponent_total += 3
+            
     return f"{team_total}:{opponent_total}"
 
 match_results = ["2:3", "1:1", "4:2", "0:0", "2:1"]
